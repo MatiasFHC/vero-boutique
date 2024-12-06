@@ -1,0 +1,158 @@
+/* Estilo General */
+.about-us {
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f4f1;
+    color: #4a148c;
+  }
+  
+  /* Encabezado */
+  .about-header {
+    text-align: center;
+    background-color: #fae1e1;
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-header h1 {
+    font-size: 48px;
+    color: #6a1b9a;
+    font-weight: 600;
+  }
+  
+  .about-header p {
+    font-size: 20px;
+    color: #4a148c;
+    margin-top: 10px;
+    font-weight: 300;
+  }
+  
+  /* Sección "Nuestra Historia" */
+  .history-section {
+    background-color: #f1d6ed; /* Fondo azul claro */
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .history-section h3 {
+    font-size: 28px;
+    color: #7393ec; /* Azul */
+    margin-bottom: 10px;
+  }
+  
+  /* Equipo */
+  .team-section {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .team-section h2 {
+    font-size: 36px;
+    color: #880e4f;
+    margin-bottom: 40px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .team-member-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .team-member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+/* Contenedor de Misión y Visión */
+.mission-vision {
+    display: flex;
+    justify-content: center;  /* Centra las tarjetas horizontalmente */
+    align-items: center;      /* Centra las tarjetas verticalmente */
+    gap: 20px;
+    margin-top: 40px;
+    text-align: center;  /* Centra el título "Misión y Visión" */
+  }
+  
+  /* Estilo de las tarjetas de Misión y Visión */
+  .mission-card,
+  .vision-card {
+    width: 45%; /* Ajustar el ancho de las tarjetas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 12px; /* Bordes más redondeados */
+    background-color: #f3e5f5; /* Fondo suave */
+    text-align: center; /* Centra el texto dentro de las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Asegura que el contenido se centre verticalmente */
+  }
+  
+  /* Título de la sección Misión y Visión */
+  .mission-vision h3 {
+    font-size: 28px;
+    color: #880e4f;
+    margin-bottom: 20px;
+    text-align: center; /* Centra el título "Misión y Visión" */
+  }
+  
+  /* Títulos dentro de las tarjetas */
+  .mat-card-title {
+    color: #880e4f;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Centra el título dentro de las tarjetas */
+  }
+  
+  /* Contenido dentro de las tarjetas */
+  .mat-card-content p {
+    color: #6a1b9a;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center; /* Centra el texto dentro de las tarjetas */
+  }
+
+  .about-section h3 {
+    text-align: center;
+    color: #880e4f; /* El color del título */
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  
+  .mission-vision mat-card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .mission-vision mat-card-title {
+    text-align: center;
+    width: 100%;
+  }
+  
+  

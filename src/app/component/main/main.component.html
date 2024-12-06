@@ -1,0 +1,46 @@
+<app-navbar />
+  
+<main>
+  <div class="banner">
+    <h1>Bienvenido a Lana Boutique</h1>
+    <p>Descubre los productos más encantadores hechos a mano</p>
+    <mat-card-actions>
+      <button mat-raised-button color="accent" routerLink="/productos">Explorar Productos</button>
+    </mat-card-actions>
+  </div>
+  
+  
+  <div class="products-section">
+    <h2>Nuestros Productos Principales</h2>
+    <div class="product-grid">
+        <div class="product-card" *ngFor="let product of products">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>{{ product.name }}</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="price">{{ product.price | currency }}</div>
+                <mat-card class="image-card">
+                  <img mat-card-image src="{{ product.image }}" alt="{{ product.name }}" />
+                </mat-card>
+                <p>{{ product.description }}</p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button color="primary" [routerLink]="['/producto-seleccionado', product.id]">Comprar</button>              
+              </mat-card-actions>
+            </mat-card>
+          </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>¡Síguenos en nuestras redes sociales!</p>
+      <a href="https://www.instagram.com" target="_blank" class="instagram-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="instagram-icon" />
+      </a>
+    </div>
+    <p>&copy; 2024 Lana Boutique. Todos los derechos reservados.</p>
+    <p>Contacto: +51 996 145 420</p>
+  </footer>
+</main>

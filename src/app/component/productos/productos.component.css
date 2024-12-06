@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Toolbar */
+  mat-toolbar {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+  }
+  
+  
+  /* Products Section */
+  .products-section {
+    padding: 20px;
+    background-color: #f3e5f5;
+  }
+  
+  .products-section h2 {
+    text-align: center;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+  }
+  
+  /* Ajuste de la cuadrícula */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    justify-content: center; /* Centrar las columnas */
+  }
+  
+  /* Ajuste de las tarjetas */
+  .product-card mat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto; /* Altura flexible */
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  /* Efecto al pasar el mouse */
+  .product-card mat-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Ajuste de las imágenes */
+  .product-card mat-card img {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: 180px; /* Altura ajustada para las imágenes */
+    object-fit: contain; /* Asegura que la imagen completa sea visible */
+    border-radius: 4px;
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+  }
+  
+  /* Ajuste del precio centrado */
+  .price {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 20px; /* Ajusta el tamaño del precio */
+    color: #4a148c; /* Cambia el color del precio */
+    margin-bottom: 15px; /* Espacio debajo del precio */
+  }
+  
+  /* Ajuste de la imagen con fondo plomo */
+  .image-card {
+    padding: 10px;
+    background-color: #979696; /* Color plomo */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombras para resaltar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-card img {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: 180px; /* Altura fija para la imagen */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+    border-radius: 4px; /* Bordes suaves */
+  }
+  
+  /* Ajuste general del card principal */
+  .product-card mat-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    height: auto; /* Ajuste dinámico */
+  }
+  
+  .product-card mat-card:hover {
+    transform: translateY(-5px);
+  }
+  
+/* Estilo predeterminado del botón */
+.product-card mat-card-actions button {
+  background-color: #f3e5f5; 
+  color: #6a1b9a;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s ease;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+/* Estilo al pasar el mouse */
+.product-card mat-card-actions button:hover {
+  background-color: #1565c0; /* Azul oscuro */
+  color: white;
+  transform: scale(1.05); /* Agranda el botón ligeramente */
+}
+
+/* Desactiva la sombra predeterminada de Angular Material */
+.product-card mat-card-actions button.mat-button-base {
+  box-shadow: none;
+}

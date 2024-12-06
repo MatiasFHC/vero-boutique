@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<mat-card *ngIf="product" class="product-card">
+  <mat-card-header>
+    <mat-card-title>{{ product.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="product-container">
+      <div class="thumbnails">
+        <img
+          *ngFor="let img of product.additionalImages"
+          [src]="img"
+          [alt]="product.name"
+          class="thumbnail"
+        />
+      </div>
+      <div class="main-image">
+        <img mat-card-image [src]="product.image" [alt]="product.name" />
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="price">{{ product.price | currency }}</div>
+      <p>{{ product.description }}</p>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<!-- Nuevo mat-card para "Contáctanos" -->
+<mat-card class="contact-card">
+  <mat-card-content>
+    <div class="contact-info">
+      <h3>Contáctanos</h3>
+      <p>📞 +51 996 145 420</p>
+    </div>
+  </mat-card-content>
+</mat-card>

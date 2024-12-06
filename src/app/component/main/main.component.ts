@@ -11,6 +11,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-main',
+  standalone: true,
   imports: [
     MatCardModule,
     MatButtonModule,

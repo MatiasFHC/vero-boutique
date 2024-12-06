@@ -11,6 +11,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-nosotros',
+  standalone: true,
   imports: [
     NavbarComponent,
     MatCardModule,

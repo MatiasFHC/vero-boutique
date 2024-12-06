@@ -6,6 +6,7 @@ import { RouterLink } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
 @Component({
   selector: 'app-navbar',
+  standalone: true,
   imports: [
     MatIconModule,
     MatToolbarModule,

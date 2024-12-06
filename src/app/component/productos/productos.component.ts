@@ -11,6 +11,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-productos',
+  standalone: true,
   imports: [
     NavbarComponent,
     MatCardModule,

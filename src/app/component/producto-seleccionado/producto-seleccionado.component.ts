@@ -12,6 +12,7 @@ import { AppServiceService } from '../../service/app-service.service';
 
 @Component({
   selector: 'app-producto-seleccionado',
+  standalone: true,
   imports: [
     MatCardModule,
     MatButtonModule,
